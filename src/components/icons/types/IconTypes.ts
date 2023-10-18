@@ -1,0 +1,10 @@
+export type IconTypes =
+  | 'sunrise'
+  | 'sunset'
+  | 'raindrop'
+  | 'humidity'
+  | 'wind'
+  | 'arrowsdown'
+  | 'thermometer'
+  | 'eye'
+  | 'snow'
