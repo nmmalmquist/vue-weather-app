@@ -23,7 +23,7 @@ const filteredHoursToOnlyAfterThisHour = computed(() => props.hoursData.filter((
 <template>
   <ol class="flex gap-4">
     <li v-for="(hour, index) in filteredHoursToOnlyAfterThisHour" v-bind:key="hour.time_epoch">
-      <ForecastHourItem :hour="hour" :index="index"/>
+      <ForecastHourItem :hour="hour" :index="index" :today="new Date(hoursData[0].time)"/>
     </li>
     </ol>
 </template>

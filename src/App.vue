@@ -76,7 +76,7 @@ onBeforeMount(async () => {
             </div>
           </div>
           <div class="lg:col-span-9 flex overflow-auto">
-            <ForecastList :hours-data="weatherData.forecast.forecastday[0].hour" :time-zone-date="new Date(weatherData.location.localtime)"/>
+            <ForecastList :hours-data="[...weatherData.forecast.forecastday[0].hour, ...weatherData.forecast.forecastday[1].hour]" :time-zone-date="new Date(weatherData.location.localtime)"/>
           </div>
         </div>
         <div class="w-full text-center md:text-start flex flex-col gap-4">
